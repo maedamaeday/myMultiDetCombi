@@ -46,7 +46,6 @@ def findBest( FPs, FN = mdc.def_common_FN, method = "MooN", verbose = False ):
                                   
 def main( FPs, FN = mdc.def_common_FN, obs = None ):
 
-   print(obs)
    if obs is not None:
       detectorData = mdc.myMultipleDetectorData( FPs, FN = FN, obs = obs )
       print( detectorData.getLikelihood() )
